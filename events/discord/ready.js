@@ -15,7 +15,7 @@ module.exports = async (client) => {
   const activities = [`All Giveaways Running Smoothly`, `ZeroSync on YouTube`];
   setInterval(() => {
     let activity = activities[Math.floor(Math.random() * activities.length)];
-    client.user.setActivity(activity, { type: "WATCHING" });
+    client.user.setActivity("Your activity", { type: "WATCHING" });
   }, 20000);
 
 };
